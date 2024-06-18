@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="context">
+            <h1 id="title">Hi I'm Rodier! and you are?</h1>
+            <p id="description">Let's take a quick survey!</p>
+            <form id="survey-form">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off" required>
+
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="off" required>
+
+                <label for="age" id="number-label">Age:</label>
+                <input type="number" id="number" name="age" min="1" max="100" placeholder="How old are you?" required>
+
+                <label>Motivated?</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="yes" name="radio-button" value="yes">
+                        <label for="yes" class="yes-radio">Yes</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="no" name="radio-button" value="no">
+                        <label for="no" class="no-radio">No</label>
+                    </div>
+                </div>
+
+                <label for="experience">How many years of programming experience do you have?</label>
+                <input type="number" id="experience" name="experience" min="0" max="50" required>
+
+                <label for="language">Favorite programming language:</label>
+                <select id="dropdown" name="language" required>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="c++">C++</option>
+                    <option value="ruby">Ruby</option>
+                </select>
+
+                <div class="checkbox-group">
+                <label>If not Web Development, other field/s you want to pursue:</label>
+    
+                <label class="container">Data Science
+                    <input type="checkbox" value="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Mobile Development
+                <input type="checkbox" value="checkbox">
+                <span class="checkmark"></span>
+                </label>
+
+                <label class="container">IT Support
+                <input type="checkbox" value="checkbox">
+                <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Cybersecurity
+                <input type="checkbox" value="checkbox">
+                <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Cloud Engineering
+                <input type="checkbox" value="checkbox">
+                <span class="checkmark"></span>
+                </label>
+
+                <label for="feedback">Any additional feedback?</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Provide your feedback..." autocomplete="off"></textarea>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
